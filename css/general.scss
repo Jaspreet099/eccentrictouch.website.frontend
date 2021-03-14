@@ -1,0 +1,23 @@
+
+
+.header {
+  overflow: hidden;
+  background-color: white;
+  text-align: center;
+  padding: 2em;
+}
+
+.header:hover {
+  color: gray;
+}
+
+.header_option {
+  color: black;
+  font-family: "Poppins";
+  margin-right: 1.5em;
+  margin-left: 1.5em;
+}
+
+.header_option:hover {
+  color: gray;
+}
