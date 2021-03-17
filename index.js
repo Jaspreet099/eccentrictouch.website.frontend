@@ -27,18 +27,39 @@ let header_options = [
   }
 ];
 
+let right_header = document.createElement("div");
+right_header.className = "right-section";
+right_header.style.float = "right"
+
+let left_header = document.createElement("div")
+left_header.className = "left-section";
+left_header.style.float = "left";
+
+let logo = document.createElement("img");
+logo.classList = "logo";
+logo.src = "logo.svg";
+logo.style.width = "240px";
+
+left_header.append(logo);
+
 for (var __options in header_options) {
   if (header_options[__options].type === "text") {
     let headerOption = document.createElement("a");
-    headerOption.class = "header_option";
+    headerOption.classList = "header_option option";
     headerOption.innerHTML = header_options[__options].title;
     headerOption.href = header_options[__options].path;
-    header.append(headerOption);
+    right_header.append(headerOption);
   } else if (header_options[__options].type === "button") {
     let __button = getSecondaryButton(header_options[__options].title, header_options[__options].path);
-    header.append(__button);
+    __button.classList.add = "header_option";
+    right_header.append(__button);
   }
 }
+
+right_header.style.marginTop = "14px";
+
+header.append(left_header);
+header.append(right_header);
 
 document.getElementById("header").appendChild(header);
 
@@ -46,12 +67,27 @@ let landing_section = document.createElement("div");
 landing_section.className = "section";
 landing_section.id = "landing-section";
 
+let comingSoonTag = document.createElement("a");
+comingSoonTag.className = "tag bg-red";
+comingSoonTag.innerText = "Coming Soon";
+
+let preReleaseTag = document.createElement("a");
+preReleaseTag.className = "tag bg-purple";
+preReleaseTag.innerText = "Pre-Release";
+
+let latestVersionTag = document.createElement("a");
+latestVersionTag.className = "tag bg-dark";
+latestVersionTag.innerText = "Latest Version (v.0.1)";
+
 let tagline = document.createElement("h1");
 tagline.className = "tagline";
-tagline.innerHTML = `The <u>Last</u> Design Touch to your Websites.`;
+tagline.innerHTML = `The <u>Last Design</u> Touch to your Websites.`;
 tagline.style.fontFamily = "Ubuntu";
-tagline.style.width = "38%";
 tagline.style.fontSize = "52px";
+
+let checkGitHubButton = getPrimaryButton("Check GitHub", url="https://www.github.com/DesignSystemsOSS/eccentrictouch");
+
+let GetPreReleaseVersionButton = getSecondaryButton("Get v.0.1 for Beta Testing (Pre-Release)", url="");
 
 let emailInput = document.createElement("div");
 emailInput.className = "flex";
@@ -64,11 +100,31 @@ email_input_textbox.className = "input";
 
 
 emailInput.append(email_input_textbox);
-emailInput.append(getPrimaryButton("Get In Touch", ""));
 
 
-homepage.append(tagline);
-homepage.append(emailInput);
+let _button_GetInTouch = document.createElement("div");
+_button_GetInTouch = getPrimaryButton("Get In Touch", "");
+_button_GetInTouch.classList.add = "emailButton";
+
+
+emailInput.append(_button_GetInTouch);
+emailInput.style.marginTop = "4em";
+
+tagline.style.marginBottom = "1em";
+tagline.style.marginTop = "0.4em";
+
+landing_section.append(comingSoonTag, preReleaseTag, latestVersionTag);
+landing_section.append(tagline);
+landing_section.append(checkGitHubButton, GetPreReleaseVersionButton);
+landing_section.append(emailInput);
+
+// homepage.append(comingSoonTag);
+// homepage.append(tagline);
+// homepage.append(emailInput);
+
+landing_section.style.marginTop = "3em";
+
+homepage.append(landing_section);
 
 
 
