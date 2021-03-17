@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+.primaryButton{
+    display: table;
+    text-decoration: none;
+    color:white;
+    background-color: #4277FF;
+    font-family: Ubuntu;
+    padding: 15px;
+    border-radius: 8px;
+    transition: ease-in-out 0.2s;
+}
+  .primaryButton:hover{
+    background-color: #0038C9;
+
+}
+
+.secondaryButton {
+    display: table;
+    border: 1px solid #4277FF;
+    color: #4277FF;
+    border-radius: 8px;
+    padding: 15px;
+    font-family: Ubuntu;
+    text-decoration: none;
+    transition: ease-in-out 0.2s;
+
+}
+.secondaryButton:hover{
+    background-color:#DAE5FF ;
+
+}
