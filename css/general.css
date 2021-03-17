@@ -31,10 +31,26 @@
   background-color: #DAE5FF;
 }
 
+.logo {
+  float: left;
+}
+
+.tagline {
+  width: 32%;
+}
+
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.block {
+  display: block;
+}
+
+.inline {
+  display: inline;
 }
 
 .input {
@@ -54,25 +70,109 @@
 
 .input::-webkit-input-placeholder {
   color: #cfcfcf;
-  text-align: center;
-  width: 100% auto;
 }
 
 .input:-ms-input-placeholder {
   color: #cfcfcf;
-  text-align: center;
-  width: 100% auto;
 }
 
 .input::-ms-input-placeholder {
   color: #cfcfcf;
-  text-align: center;
-  width: 100% auto;
 }
 
 .input::placeholder {
   color: #cfcfcf;
-  text-align: center;
-  width: 100% auto;
+}
+
+.header {
+  padding-top: 2.1em;
+  margin: auto;
+  padding: 2.1em;
+  overflow: hidden;
+}
+
+.option {
+  text-decoration: none;
+  color: black;
+  font-family: "Ubuntu", sans-serif;
+  -webkit-transition: 0.1s ease-in-out;
+  transition: 0.1s ease-in-out;
+}
+
+.option:hover {
+  color: #4277FF;
+}
+
+.header_option {
+  margin-left: 1.2em;
+  margin-right: 1.2em;
+}
+
+@media screen and (max-width: 700px) {
+  .header {
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #right-section, #left-section {
+    float: none;
+    text-align: center;
+  }
+  .section {
+    text-align: center;
+  }
+  .tagline {
+    text-align: center;
+    margin: auto;
+    width: 60%;
+  }
+  #email-input {
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: absolute;
+  }
+  .input {
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .emailButton {
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    line-break: auto;
+  }
+  .tag {
+    margin: auto;
+  }
+}
+
+.bg-red {
+  background-color: #f13e74;
+  color: white;
+}
+
+.bg-purple {
+  background-color: #0038C9;
+  color: white;
+}
+
+.bg-dark {
+  color: white;
+  background-color: black;
+}
+
+.tag {
+  padding-right: 8px;
+  padding-left: 8px;
+  font-family: "Ubuntu", sans-serif;
+  border-radius: 3px;
+  padding-bottom: 1px;
+  margin-right: 0.4em;
 }
 /*# sourceMappingURL=general.css.map */
