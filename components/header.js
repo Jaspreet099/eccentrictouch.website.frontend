@@ -1,41 +1,41 @@
 
-let header = document.createElement("div");
-header.className = "header";
+// let header = document.createElement("div");
+// header.className = "header";
 
-let header_options = [
-  {
-    "title": "Home",
-    "path": "index.htm"
-  },
-  {
-    "title": "Docs",
-    "path": ""
-  },
-  {
-    "title": "Download",
-    "path": ""
-  },
-  {
-    "title": "GitHub",
-    "path": "https://www.github.com/DesignSystemsOSS/eccentrictouch"
-  }
-];
+// let header_options = [
+//   {
+//     "title": "Home",
+//     "path": "index.htm",
+//     "type": "text"
+//   },
+//   {
+//     "title": "Docs",
+//     "path": "",
+//     "type": "text"
+//   },
+//   {
+//     "title": "GitHub",
+//     "path": "https://www.github.com/DesignSystemsOSS/eccentrictouch",
+//     "type": "text"
+//   },
+//   {
+//     "title": "Download",
+//     "path": "",
+//     "type": "button"
+//   }
+// ];
 
-for (var __options in header_options) {
-  if (header_options[__options].title != "GitHub") {
-    let new_option = document.createElement("a");
-    new_option.className = "header_option";
-    new_option.innerHTML = header_options[__options].title;
-    new_option.href = header_options[__options].path;
-    header.append(new_option);
-  } else if (header_options[__options].title == "GitHub") {
-    let new_option = document.createElement("a");
-    new_option.className = "header_option";
-    new_option.innerHTML = header_options[__options].title;
-    new_option.href = header_options[__options].path;
-    new_option.target = "_blank";
-    header.append(new_option);
-  }
-}
+// for (var __options in header_options) {
+//   if (header_options[__options].type === "text") {
+//     let headerOption = document.createElement("a");
+//     headerOption.class = "header_option";
+//     headerOption.innerHTML = header_options[__options].title;
+//     headerOption.href = header_options[__options].path;
+//     header.append(headerOption);
+//   } else if (header_options[__options].type === "button") {
+//     let __button = getSecondaryButton(header_options[__options].title, header_options[__options].path);
+//     header.append(__button);
+//   }
+// }
 
-document.getElementById("header").appendChild(header);
+// document.getElementById("header").appendChild(header);
