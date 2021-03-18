@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 .primaryButton {
   color: white;
@@ -37,7 +37,7 @@
 }
 
 .tagline {
-  width: 32%;
+  width: 45%;
 }
 
 .flex {
@@ -68,41 +68,41 @@
   margin-right: 1em;
   -webkit-box-shadow: 12px 24px 120px #ececec;
           box-shadow: 12px 24px 120px #ececec;
+  width: 30%;
 }
 
 .input::-webkit-input-placeholder {
-  color: #cfcfcf;
+  color: #b3b3b3;
 }
 
 .input:-ms-input-placeholder {
-  color: #cfcfcf;
+  color: #b3b3b3;
 }
 
 .input::-ms-input-placeholder {
-  color: #cfcfcf;
+  color: #b3b3b3;
 }
 
 .input::placeholder {
-  color: #cfcfcf;
+  color: #b3b3b3;
 }
 
 .header {
   padding-top: 2.1em;
-  margin: auto;
-  padding: 2.1em;
+  padding-bottom: 2.1em;
   overflow: hidden;
+  background-color: white;
 }
 
 .option {
   text-decoration: none;
   color: black;
   font-family: "Ubuntu", sans-serif;
-  -webkit-transition: 0.1s ease-in-out;
-  transition: 0.1s ease-in-out;
 }
 
 .option:hover {
   color: #4277FF;
+  border-bottom: 1px solid #4277FF;
 }
 
 .header_option {
@@ -155,8 +155,8 @@
 }
 
 .bg-red {
-  background-color: rgba(241, 62, 116, 0.575);
-  color: black;
+  background-color: #e94343;
+  color: white;
 }
 
 .bg-purple {
