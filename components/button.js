@@ -5,6 +5,7 @@ const getPrimaryButton = function getPrimaryButton(button_name, url = "") {
   primaryButton.className = "primaryButton";
   primaryButton.href = url;
   primaryButton.innerHTML = button_name;
+  primaryButton.style.marginRight = "0.5em";  
   // document.getElementById(append_to_id).append(primaryButton);
   return primaryButton;
 }
@@ -14,6 +15,7 @@ const getSecondaryButton = function getSecondaryButton(button_name, url="") {
   secondaryButton.className = "secondaryButton";
   secondaryButton.href = url;
   secondaryButton.innerHTML = button_name;
+  secondaryButton.style.marginRight = "0.5em";
   // document.getElementById(append_to_id).append(secondaryButton);
   return secondaryButton;
 }
