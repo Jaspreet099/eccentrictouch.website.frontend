@@ -1,4 +1,8 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
 .primaryButton {
   color: white;
   background-color: #4277ff;
@@ -36,7 +40,7 @@
 }
 
 .tagline {
-  width: 32%;
+  width: 45%;
 }
 
 .flex {
@@ -59,54 +63,58 @@
   font-weight: 550;
   font-size: medium;
   border-radius: 8px;
-  border-top-style: hidden;
-  border-right-style: hidden;
-  border-left-style: hidden;
-  border-bottom-style: hidden;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-left-style: solid;
+  border-bottom-style: solid;
+  border-width: 2px;
   margin-right: 1em;
   -webkit-box-shadow: 12px 24px 120px #ececec;
-  box-shadow: 12px 24px 120px #ececec;
+
+          box-shadow: 12px 24px 120px #ececec;
+  width: 30%;
+
 }
 
 .input::-webkit-input-placeholder {
-  color: #cfcfcf;
+  color: #b3b3b3;
 }
 
 .input:-ms-input-placeholder {
-  color: #cfcfcf;
+  color: #b3b3b3;
 }
 
 .input::-ms-input-placeholder {
-  color: #cfcfcf;
+  color: #b3b3b3;
 }
 
 .input::placeholder {
-  color: #cfcfcf;
+  color: #b3b3b3;
 }
 
 .header {
   padding-top: 2.1em;
-  margin: auto;
-  padding: 2.1em;
+  padding-bottom: 2.1em;
   overflow: hidden;
+  background-color: white;
 }
 
 .option {
   text-decoration: none;
   color: black;
-  font-family: 'Ubuntu', sans-serif;
-  -webkit-transition: 0.1s ease-in-out;
-  transition: 0.1s ease-in-out;
+  font-family: "Ubuntu", sans-serif;
 }
 
 .option:hover {
-  color: #4277ff;
+  color: #4277FF;
+  border-bottom: 1px solid #4277FF;
 }
 
 .header_option {
   margin-left: 1.2em;
   margin-right: 1.2em;
 }
+
 
 @media screen and (max-width: 700px) {
   .header {
@@ -154,18 +162,20 @@
 }
 
 .bg-red {
-  background-color: #f13e74;
+  background-color: #e94343;
   color: white;
 }
 
 .bg-purple {
-  background-color: #0038c9;
-  color: white;
+
+  background-color: #0048ff5d;
+  color: #0038C9;
+
 }
 
 .bg-dark {
   color: white;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.397);
 }
 
 .tag {

@@ -59,7 +59,12 @@ for (var __options in header_options) {
   }
 }
 
-right_header.style.marginTop = '14px';
+
+let GetPreReleaseVersionButton = getPrimaryButton("Get v.0.1 (Pre-Release)", url="");
+right_header.append(GetPreReleaseVersionButton);
+
+right_header.style.marginTop = "14px";
+
 
 header.append(left_header);
 header.append(right_header);
@@ -70,28 +75,26 @@ let landing_section = document.createElement('div');
 landing_section.className = 'section';
 landing_section.id = 'landing-section';
 
-let comingSoonTag = document.createElement('a');
-comingSoonTag.className = 'tag bg-red';
-comingSoonTag.innerText = 'Coming Soon';
+// let preReleaseTag = document.createElement("a");
+// preReleaseTag.className = "tag bg-purple";
+// preReleaseTag.innerText = "Pre-Release";
 
-let preReleaseTag = document.createElement('a');
-preReleaseTag.className = 'tag bg-purple';
-preReleaseTag.innerText = 'Pre-Release';
+// let latestVersionTag = document.createElement("a");
+// latestVersionTag.className = "tag bg-dark";
+// latestVersionTag.innerText = "Latest Version (v.0.1)";
 
-let latestVersionTag = document.createElement('a');
-latestVersionTag.className = 'tag bg-dark';
-latestVersionTag.innerText = 'Latest Version (v.0.1)';
 
-let tagline = document.createElement('h1');
-tagline.className = 'tagline';
-tagline.innerHTML = `The <u>Last Design</u> Touch to your Websites.`;
-tagline.style.fontFamily = 'Ubuntu';
-tagline.style.fontSize = '52px';
+let comingSoonTag = document.createElement("a");
+comingSoonTag.className = "tag bg-red";
+comingSoonTag.innerText = "Coming Soon";
 
-let checkGitHubButton = getPrimaryButton(
-  'Check GitHub',
-  (url = 'https://www.github.com/DesignSystemsOSS/eccentrictouch')
-);
+let tagline = document.createElement("p");
+tagline.className = "tagline";
+tagline.innerHTML = `Suffering from Frontend crises? Here's something that might interest you.`;
+tagline.style.fontFamily = "Ubuntu";
+tagline.style.fontSize = "52px";
+
+
 
 let GetPreReleaseVersionButton = getSecondaryButton(
   'Get v.0.1 for Beta Testing (Pre-Release)',
@@ -116,12 +119,16 @@ _button_GetInTouch.classList.add = 'emailButton';
 emailInput.append(_button_GetInTouch);
 emailInput.style.marginTop = '4em';
 
-tagline.style.marginBottom = '1em';
-tagline.style.marginTop = '0.4em';
 
-landing_section.append(comingSoonTag, preReleaseTag, latestVersionTag);
+// tagline.style.marginBottom = "1em";
+// tagline.style.marginTop = "0.4em";
+
+
+
+landing_section.append(comingSoonTag);
 landing_section.append(tagline);
-landing_section.append(checkGitHubButton, GetPreReleaseVersionButton);
+
+
 landing_section.append(emailInput);
 
 // homepage.append(comingSoonTag);
