@@ -1,5 +1,11 @@
-body {
+* {
+  box-sizing: border-box;
+}
+.container {
   margin: auto;
   max-width: 1400px;
+}
+body {
+  margin: 0;
 }
 /*# sourceMappingURL=index.css.map */
