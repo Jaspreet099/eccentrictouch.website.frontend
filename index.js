@@ -1,4 +1,6 @@
 
+const AIRTABLE_API_KEY = "key8DGSGuPHG5zmQX";
+
 let homepage = document.createElement("div");
 
 let header = document.createElement("div");
@@ -105,8 +107,8 @@ email_input_textbox.className = "input";
 emailInput.append(email_input_textbox);
 
 
-let _button_GetInTouch = document.createElement("div");
-_button_GetInTouch = getPrimaryButton("Get In Touch", "");
+let _button_GetInTouch = document.createElement("a");
+_button_GetInTouch = getPrimaryButton("Get In Touch");
 _button_GetInTouch.classList.add = "emailButton";
 
 
@@ -135,3 +137,28 @@ homepage.append(landing_section);
 
 /// appending entire homepage as a DOM Object
 document.getElementById("root").appendChild(homepage);
+
+
+_button_GetInTouch.onclick = function fetchUserEmailAddress() {
+  let email = email_input_textbox.value;
+  /// airtable - api key auth
+  const Airtable = require('airtable');
+  const base = new Airtable({ apiKey: AIRTABLE_API_KEY }).base(
+    'appqvc1jKHBIRRbSy'
+  );
+  const table = base('Email Registrations');
+
+  /// Create new a record
+  const createRecord = async (fields) => {
+    const createdRecord = await table.create(fields);
+    console.log(minifyRecord(createdRecord));
+  };
+
+
+
+}
+
+// const fetchUserEmailAddress = function fetchUserEmailAddress() {
+//   let __email = email_input_textbox.value;
+//   console.log(__email);
+// }
