@@ -1,29 +1,26 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-
 .primaryButton {
   color: white;
-  background-color: #4277ff;
+  background-color: #4277FF;
   padding: 1em;
   text-decoration: none;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   border-radius: 8px;
 }
 
 .primaryButton:hover {
   -webkit-transition: 0.1s ease-in-out;
   transition: 0.1s ease-in-out;
-  background-color: #0038c9;
+  background-color: #0038C9;
 }
 
 .secondaryButton {
   background-color: white;
   padding: 1em;
-  font-family: 'Ubuntu', sans-serif;
-  color: #4277ff;
-  border: #4277ff solid;
+  font-family: "Ubuntu", sans-serif;
+  color: #4277FF;
+  border: #4277FF solid;
   text-decoration: none;
   border-radius: 8px;
   border-width: 2px;
@@ -32,7 +29,7 @@
 .secondaryButton:hover {
   -webkit-transition: 0.1s ease-in-out;
   transition: 0.1s ease-in-out;
-  background-color: #dae5ff;
+  background-color: #DAE5FF;
 }
 
 .logo {
@@ -59,7 +56,7 @@
 
 .input {
   color: black;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-weight: 550;
   font-size: medium;
   border-radius: 8px;
@@ -70,10 +67,8 @@
   border-width: 2px;
   margin-right: 1em;
   -webkit-box-shadow: 12px 24px 120px #ececec;
-
           box-shadow: 12px 24px 120px #ececec;
   width: 30%;
-
 }
 
 .input::-webkit-input-placeholder {
@@ -115,16 +110,14 @@
   margin-right: 1.2em;
 }
 
-
 @media screen and (max-width: 700px) {
   .header {
     text-align: center;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  #right-section,
-  #left-section {
+  #right-section, #left-section {
     float: none;
     text-align: center;
   }
@@ -139,21 +132,21 @@
   #email-input {
     text-align: center;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     position: absolute;
   }
   .input {
     text-align: center;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .emailButton {
     text-align: center;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     line-break: auto;
   }
   .tag {
@@ -167,10 +160,8 @@
 }
 
 .bg-purple {
-
   background-color: #0048ff5d;
   color: #0038C9;
-
 }
 
 .bg-dark {
@@ -181,7 +172,7 @@
 .tag {
   padding-right: 8px;
   padding-left: 8px;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   border-radius: 3px;
   padding-bottom: 1px;
   margin-right: 0.4em;
