@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 .primaryButton {
     color: white;
@@ -32,11 +33,14 @@
 
 .logo {
     float: left;
+    
 }
 
 
 .tagline {
-    width: 32%;
+    width: 45%;
+    
+
 }
 
 .flex {
@@ -57,34 +61,43 @@
     font-weight: 550;
     font-size: medium;
     border-radius: 8px;
-    border-top-style: hidden;
-    border-right-style: hidden;
-    border-left-style: hidden;
-    border-bottom-style: hidden;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-bottom-style: solid;
+    border-width: 2px;
     margin-right: 1em;
     box-shadow: 12px 24px 120px rgb(236, 236, 236);
+    width:30%;
+    
 }
 
 .input::placeholder {
-    color: rgb(207, 207, 207);
+    color: rgb(179, 179, 179);
 }
 
 .header {
     padding-top: 2.1em;
-    margin: auto;
-    padding: 2.1em;
+    // margin: auto;
+    padding-bottom: 2.1em;
     overflow: hidden;
+    // width: 100%;
+    // margin-right: 5px;
+    background-color: white;
+
 }
 
 .option {
     text-decoration: none;
     color: black;
     font-family: "Ubuntu", sans-serif;
-    transition: 0.1s ease-in-out;
+    // transition: 0.1s ease-in-out;
 }
 
 .option:hover {
     color: #4277FF;
+    // text-decoration: solid;
+    border-bottom: 1px solid #4277FF;
 }
 
 .header_option {
@@ -129,18 +142,18 @@
 }
 
 .bg-red {
-    background-color: rgb(241, 62, 116);
-    color: white;
+    background-color:rgb(233, 67, 67);
+    color:white;
 }
 
 .bg-purple {
-    background-color: #0038C9;
-    color: white;
+    background-color: #0048ff5d;
+    color: #0038C9;
 }
 
 .bg-dark {
     color: white;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.397);
 }
 
 .tag {
@@ -150,4 +163,5 @@
     border-radius: 3px;
     padding-bottom: 1px;
     margin-right: 0.4em;
+
 }
