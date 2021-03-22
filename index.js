@@ -1,6 +1,7 @@
 let homepage = document.createElement('div');
 homepage.className = 'container';
 
+
 let header = document.createElement('div');
 header.className = 'header';
 
@@ -136,3 +137,13 @@ homepage.append(landing_section);
 
 /// appending entire homepage as a DOM Object
 document.getElementById('root').appendChild(homepage);
+
+//navbar toggler
+function openNav() {
+    document.getElementById("mySidebar").style.width = "100%";
+}
+
+function closeNav() {
+    document.getElementById("mySidebar").style.width = "0";
+}
+
