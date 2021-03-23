@@ -250,6 +250,7 @@ body {
 
 .container .heading-text {
   width: 40%;
+  float: left;
 }
 
 .container p {
@@ -264,8 +265,19 @@ body {
   font-weight: 400;
 }
 
+.illustration {
+  width: 45%;
+  float: right;
+  margin-left: 4em;
+}
+
 /**************** media-query *****************/
 @media (max-width: 950px) {
+  .illustration {
+    width: 36%;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .menu li,
   .menu button {
     display: none;
