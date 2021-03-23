@@ -13,7 +13,7 @@ let header_options = [
   },
   {
     title: 'Docs',
-    path: '',
+    path: 'https://designsystemsoss.github.io/eccentrictouch.docs/#/',
     type: 'text',
   },
   {
