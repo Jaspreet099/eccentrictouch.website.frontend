@@ -341,4 +341,8 @@ body {
     font-size: .8rem;
   }
 }
+
+.container {
+  max-width: 1400px;
+}
 /*# sourceMappingURL=general.css.map */
