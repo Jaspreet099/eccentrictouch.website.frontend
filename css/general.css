@@ -295,6 +295,11 @@ body {
     margin-left: auto;
     margin-right: auto;
   }
+  .notification {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
   .menu li,
   .menu button {
     display: none;
