@@ -404,6 +404,18 @@ body {
     margin-left:4em;
   }
   
+  .notification {
+    margin-top: 3em;
+    float: left;
+  }
+
+  .notification_link {
+      color: #0038C9;
+  }
+
+  .notification_link:hover {
+    color: gray;
+  }
 
 
 /**************** media-query *****************/
