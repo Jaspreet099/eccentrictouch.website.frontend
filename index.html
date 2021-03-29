@@ -8,6 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--css modules-->
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <!--    ***** j-query ****-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
 </head>
@@ -22,14 +24,14 @@
             <div id="mySidebar" class="sidebar">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
                 <a href="index.html">Home</a>
-                <a href="#">Docs</a>
+                <a href="https://designsystemsoss.github.io/eccentrictouch.docs/#/" target="_blank">Docs</a>
                 <a href="https://www.github.com/DesignSystemsOSS/eccentrictouch" target="_blank">Github</a>
                 <a href="#">Download</a>
             </div>
-            <li class="underline"><a href="">Home</a></li>
-            <li class="underline"><a href="">Docs</a></li>
-            <li class="underline"><a href="">Github</a></li>
-            <button class="secondaryButton  btn shadow">Download</button>
+            <li class="underline"><a href="index.html">Home</a></li>
+            <li class="underline"><a href="https://designsystemsoss.github.io/eccentrictouch.docs/#/" target="_blank">Docs</a></li>
+            <li class="underline"><a href="https://www.github.com/DesignSystemsOSS/eccentrictouch" target="_blank">Github</a></li>
+            <button class="secondaryButton  btn shadow" onclick="window.open(url=`github.com/DesignSystemsOSS/eccentrictouch/releases/tag/v.0.1`);">Download</button>
             <button class="primaryButton  btn shadow">Get v.0.1 (Pre-Release)</button>
             <div id="main" class="main">
                 <button class="openbtn shadow btn" onclick="openNav()">☰ </button>
@@ -47,11 +49,10 @@
 
         </div>
         <div class="email_event"><input type="email" class="email" placeholder="Enter Your Email Address" required>
-        <button class="primaryButton  btn shadow">Get in Touch</button>
+        <button class="primaryButton btn shadow">Get in Touch</button>
+        </div>
+        <abbr class="notification">We would love to be in touch with you. Please Fill this <a href="https://airtable.com/shrYtgr9nN5hcF0h2" class="notification_link" target="_blank">Form.</a></abbr>
     </div>
-      
-    </div>
-    
    
  
   
@@ -64,16 +65,16 @@
             <div class="box2">
                 <h3>Categories</h3>
                 <ul>
-                    <a href="index.htm">
+                    <a href="index.html">
                         <li>Home</li>
                     </a>
-                    <a href="">
+                    <a href="https://designsystemsoss.github.io/eccentrictouch.docs/#/">
                         <li>Docs</li>
                     </a>
                     <a href="https://www.github.com/DesignSystemsOSS/eccentrictouch" target="_blank">
                         <li>Github</li>
                     </a>
-                    <a href="">
+                    <a href="https://www.github.com/DesignSystemsOSS/eccentrictouch">
                         <li>Download</li>
                     </a>
                     <!--option to download source code-->
@@ -82,10 +83,10 @@
             <div class="box3">
                 <h3>Information</h3>
                 <ul>
-                    <a href="">
+                    <a href="https://github.com/DesignSystemsOSS/eccentrictouch/blob/master/README.md">
                         <li>About Us</li>
                     </a>
-                    <a href="">
+                    <a href="https://github.com/DesignSystemsOSS/eccentrictouch/blob/master/LICENSE">
                         <li>Terms &amp; Conditions</li>
                     </a>
                     <a href="">
@@ -105,14 +106,15 @@
         <div class="bar">
             <p>Copyright &copy; 2021 <a>The DesignSystems</a> All rights Reserved</p>
             <div class="iconContainer ">
-                <a href="https://www.linkedin.com/company/designsystemsoss" target="_blank"><i
+                <a href="https://www.linkedin.com/company/designsystemsoss" class="social" target="_blank"><i
                         class="fab fa-linkedin"></i></a>
-                <a href="https://twitter.com/TDesignSystems" target="_blank"><i class="fab fa-twitter-square"></i></a>
-                <a href="https://bit.ly/TDesignSystemsDiscord" target="_blank"><i class="fab fa-discord"></i></a>
-                <a href="https://www.github.com/DesignSystemsOSS" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://twitter.com/TDesignSystems" class="social" target="_blank"><i class="fab fa-twitter-square"></i></a>
+                <a href="https://bit.ly/TDesignSystemsDiscord" class="social" target="_blank"><i class="fab fa-discord"></i></a>
+                <a href="https://www.github.com/DesignSystemsOSS" class="social" target="_blank"><i class="fab fa-github"></i></a>
             </div>
         </div>
     </div>
 
-    <script src="index.js"></script>
+    <script src="index.js" ></script>
+    <script src="components/button.js" ></script>
 </body></html>

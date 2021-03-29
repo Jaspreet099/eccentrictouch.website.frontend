@@ -13,7 +13,7 @@ let header_options = [
   },
   {
     title: 'Docs',
-    path: '',
+    path: 'https://designsystemsoss.github.io/eccentrictouch.docs/#/',
     type: 'text',
   },
   {
@@ -61,7 +61,7 @@ for (var __options in header_options) {
 }
 
 
-let GetPreReleaseVersionButton = getPrimaryButton("Get v.0.1 (Pre-Release)", url="");
+let GetPreReleaseVersionButton = getPrimaryButton("Get v.0.1 (Pre-Release)", url="https://github.com/DesignSystemsOSS/eccentrictouch/releases/tag/v1.0");
 right_header.append(GetPreReleaseVersionButton);
 
 right_header.style.marginTop = "14px";
@@ -111,6 +111,9 @@ emailInput.append(email_input_textbox);
 let _button_GetInTouch = document.createElement('div');
 _button_GetInTouch = getPrimaryButton('Get In Touch', '');
 _button_GetInTouch.classList.add = 'emailButton';
+_button_GetInTouch.onclick =function(){
+  window.open("https://airtable.com/shrYtgr9nN5hcF0h2")
+} ;
 
 emailInput.append(_button_GetInTouch);
 emailInput.style.marginTop = '4em';
